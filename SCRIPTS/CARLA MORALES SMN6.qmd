@@ -1,0 +1,21 @@
+---
+title: "SEMANA6"
+author: "NICOL_CAMARGO"
+format: html
+editor: visual
+---
+
+## Quarto
+
+```{#CARGANDO LA DATA A TABAJAR}
+data <- read_csv("C:/Users/USER/Downloads/cirrosis.csv")
+```
+
+You can add options to executable code like this
+
+```{# LIMPIAR LA DATA DE UNA COLUMNA ESPECIFICA, QUE CONTENGAN DATOS PERDIDOS}
+data_limpia <- data[!is.na(data$Trigliceridos), ]
+
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
